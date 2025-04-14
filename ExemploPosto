@@ -1,0 +1,22 @@
+using System.ComponentModel.Design;
+
+decimal gasolina, etanol, total;
+
+Console.WriteLine("Digite o preço da gasolina");
+gasolina = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Digite o preço do etanol");
+etanol = Convert.ToInt32(Console.ReadLine());
+
+total = etanol / gasolina;
+
+if(total >= 0.7M)
+{
+    Console.WriteLine("Compensa abastecer com gasolina");
+
+}
+
+else
+{
+    Console.WriteLine("Compensa abastecer com etanol");
+}
